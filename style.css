@@ -1,0 +1,294 @@
+/* *{
+    outline: 2px solid red;
+} */
+body{
+    width: 70%;
+    margin: 0 auto;
+    padding: 0 1px;
+    background: linear-gradient(rgba(0,0,0,0.9),rgba(149, 57, 57, 0.7)), url("img/praha.jpg") no-repeat;
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+
+    color: white;
+    font: 18px/30px Georgia, serif;
+    -webkit-font-smoothing: antialiased;
+
+    /* background: white url("img/praha11.webp") 10% -50% no-repeat; */
+    /* /* background-size: cover;
+    background-attachment: fixed;
+    height: 100vh; */
+}
+
+::selection {background: grey; color: black; text-shadow: none;}
+::-moz-selection {background: grey; color: black; text-shadow: none;}
+
+h1, h2, h3{
+    font-weight: 850;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover,
+a:focus{
+    text-decoration: underline;
+}
+
+.logo{
+    margin: 0;
+    position: relative;
+    top: -10px;
+    z-index: 2;
+}
+
+.logo a{
+    background: url("img/favicona.png") left top no-repeat;
+    display: block;
+    /* width: 960px;
+    height: 100px; */
+    width: 100%;
+    height: 100px;
+    text-indent: -9999px;
+    /* border: 4px solid yellow; */
+    
+}
+
+.cover{
+    background: url("img/praha11.webp") 15% 50%  no-repeat;
+    /* background-size: cover;
+    background-attachment: fixed; */
+    height: 40%;
+    /* border: 10px solid salmon; */
+    background-blend-mode: darken;
+    position: relative;
+    z-index: 1;
+    /* margin-top: -85px; */
+}
+
+.badge{
+    display: block;
+    background-color: red;
+    background: rgba(188,55,36,0.4);
+    color: white;
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    margin-top: 5%;
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: -2px;
+    text-align: center;
+    margin-left: 45%;
+    position: absolute;
+    /* bottom: 20px;
+    right: -10px; */
+}
+
+.badge small{
+    font-size: 14px;
+    line-height: 14px;
+    font-style: italic;
+    letter-spacing: 0;
+    font-weight: normal;
+    font-family: 'Times New Roman', Times, serif;
+    display: block;
+    padding-top: 25px;
+}
+
+.post-header{
+    text-align: center;
+}
+
+.post-title{
+    font-family: "Open Sans", sans-serif;
+    font-size: 40px;
+    line-height: 56px;
+    font-weight: 800;
+    color: white;
+    margin: 20px;
+    font-family: 'Lobster Two', cursive, sans-serif;
+}
+
+.post-meta{
+    font-style: italic;
+
+}
+
+.post-meta time:before{
+    content: "... ";
+    font-style: normal;
+}
+
+.author{
+    text-decoration: none;
+    font-family: "Lobster Two", sans-serif;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: -1px;
+    margin: 0 2px;
+}
+
+/* .info-pankrac{
+    column-count: 2;
+    column-gap: 4%;
+    text-align: justify;
+    text-indent: 20%;
+    font-family: sans-serif;
+} */
+
+.post-content h2{
+    font-size: 22px;
+    line-height: 30px;
+    color: beige;
+    margin-top: 40px;
+    margin-bottom: 14px;
+    font-family: "Lobster Two", sans-serif;
+}
+
+.post-content p, 
+.post-content h2{
+    margin-left: 10%;
+    margin-right: 10%;
+    /* text-align: justify; */
+}
+
+
+.post-content p:first-child{
+    font-size: 22px;
+    line-height: 34px;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: justify;
+    /* color: blueviolet; */
+    
+
+}
+.float-left{
+    float: left;
+    text-align: left;
+
+}
+
+.float-right{
+    float: right;
+
+}
+
+.pullquote{
+    color: grey;
+    max-width: 20%;
+}
+
+.pullquote.float-left{
+    margin: 20px 30px 20px 0;
+}
+
+.pullquote.float-right{
+    margin: 20px 0 20px 30px;
+}
+
+.pullquote q{
+    font-size: 22px;
+    line-height: 34px;
+    font-style: italic;
+    letter-spacing: -1px;
+    /* word-spacing: -1px; */
+}
+
+.pullquote ol,
+.pullquote ul{
+    list-style: none;
+    color: aliceblue;
+    padding-left: 0;
+
+}
+
+.pullquote li{
+    border-bottom: 1px dotted grey;
+    padding: 2px 10px;
+}
+
+.pullquote.float-left a{
+    color: rgb(208, 33, 33);
+}
+
+.pullquote li:last-child{
+    border-bottom: 1px dotted rgb(208, 33, 33);
+}
+
+.pullquote li:first-child{
+    border-top: 1px dotted rgb(208, 33, 33);
+}
+
+.post-footer{
+    /* border: 3px solid blue; */
+    margin-top: 70px;
+}
+
+/* main article{
+    border: 2px dotted yellow;
+} */
+
+.post-footer h3{
+    font-size: 16px;
+    color: beige;
+
+}
+
+.post-footer > h3{
+    text-align: center;
+    position: relative;
+}
+
+.photo{
+    float: left;
+    height: 30%;
+    width: 30%;
+    margin-left: 10%;
+
+}
+
+.photo img{
+    height: 20%;
+    width: 20%;
+    border-radius: 50%;
+    margin-left: 60%;
+    border: 3px solid grey;
+}
+
+.about h3,
+.about p{
+    font-size: 16px;
+    line-height: 20px;
+    margin-left: -10px;
+    width: 50%;
+    
+}
+
+.about h3 a{
+    color:beige;
+}
+
+.bio{
+    color: beige;
+    text-align: justify;
+    position: absolute;
+    left: 40%;
+    
+   
+}
+
+.break{
+    width: 300px;
+    height: 300px;
+}
+
+/* .post-footer{
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+} */
