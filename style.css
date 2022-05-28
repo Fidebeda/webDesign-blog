@@ -118,6 +118,10 @@ a:focus{
 
 }
 
+.post-meta time{
+    white-space: nowrap;
+}
+
 .post-meta time:before{
     content: "... ";
     font-style: normal;
@@ -292,3 +296,156 @@ a:focus{
     border-top: 1px solid black;
     border-bottom: 1px solid black;
 } */
+
+
+/* responsive */
+
+@media screen and (max-width:800px){
+    body{
+        width: 100%;
+        padding: 0;
+    }
+
+   
+
+    article{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .post-content p,
+    .post-content h2{
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+}
+
+@media screen and (max-width:600px){
+    .logo a{
+        color: whitesmoke;
+        background: none;
+        text-indent: 0;
+        text-decoration: none;
+        font-size: 40px;
+        line-height: 40px;
+        letter-spacing: 3px;
+        margin-top: 5px;
+
+    }
+}
+
+@media screen and (max-width:400px){
+    .logo a{
+        font-size: 20px;
+        line-height: 20px;
+        letter-spacing: 1px;
+        margin-top: 2px;
+        text-align: center;
+    }
+
+    .written-by{
+        display: none;
+    }
+
+    .post-meta time{
+        display: block;
+    }
+
+    .post-meta time::before{
+        content: " ";
+    }
+}
+
+@media screen and (max-width:600px){
+    .pullquote.float-left,
+    .pullquote.float-right{
+        float: none;
+        
+        border-top: 1px dotted grey;
+        margin: 45px auto;
+        height: 200px;
+        width: 300px;
+    }
+
+    .pullquote{
+        max-width: 100%;
+        
+    }
+
+    .pullquote.float-left.pullquote.float-right{
+        padding: 0;
+    }
+
+    q{
+        margin-bottom: 0;
+        display: block;
+    }
+
+    .pullquote.float-left.nav-left{
+        display: block;
+        float: none;
+        margin: 45px auto;
+        
+    }
+
+    .pullquote.float-left.nav-left ul li{
+        border: none;
+    }
+
+    
+
+    
+}
+
+
+@media screen and (max-width: 850px){
+
+    .photo{
+        float: none;
+        
+    }
+
+    .photo img{
+        display: block;
+        margin: -20px auto;
+    }
+
+    .about h3 a{
+        color: red;
+        display: block;
+        margin-top: 40px;
+    }
+
+    .bio{
+        width: 100%;
+        position: inherit;
+    }
+
+    .about p,
+    .about h3 {
+        font-size: 16px;
+        line-height: 20px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .about h3{
+        margin-bottom: 20px;
+    }
+
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
